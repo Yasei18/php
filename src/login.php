@@ -14,8 +14,7 @@ function check_captcha($token) {
     $args = http_build_query([
         "secret" => SMARTCAPTCHA_SERVER_KEY,
         "token" => $token,
-        "ip" => $_SERVER['REMOTE_ADDR'], // Нужно передать IP пользователя.
-                                         // Как правильно получить IP зависит от вашего прокси.
+        "ip" => $_SERVER['REMOTE_ADDR'],
     ]);
     curl_setopt($ch, CURLOPT_URL, "https://smartcaptcha.yandexcloud.net/validate?$args");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
