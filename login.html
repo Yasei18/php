@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+    <title>Registration</title>
+</head>
+<body>
+    
+    <form action="src/login.php" method="POST">
+        <label for="login">Логин:</label>
+    <input type="text" id="login" name="login" placeholder="Телефон или email" required>
+  
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="pass" required>
+  
+    <input type="hidden" name="g-recaptcha-response" required>
+
+    <button type="submit">Войти</button>
+    </form>
+    
+
+    <div 
+    style="height: 100px"
+    id="captcha-container"
+    class="smart-captcha"
+    data-sitekey="ysc1_wvBPIM27nvwZohTzZhGNvlWJWVBz1iFBncPMdK1b700e10bb"
+  ></div>
+
+
+</body>
+</html>

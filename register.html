@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+    <title>Registration</title>
+</head>
+<body>
+
+<form action="src/register.php" method="POST">
+    <label for="name">Имя:</label>
+    <input type="text" id="login" name="login" required><br><br>
+    <label for="tel">Телефон:</label>
+    <input type="double" id="tel" name="tel" required><br><br>
+    <label for="email">Почта:</label>
+    <input type="text" id="email" name="email" required><br><br>
+    <label for="password">Пароль:</label>
+    <input type="text" id="password" name="pass" required><br><br>
+    <label for="repeat_password">Повтор пароля:</label>
+    <input type="text" id="repeat_password" name="repeatpass" required><br><br>
+    <input type="submit" value="Зарегистрироваться">
+</form>
+
+</body>
+</html>
